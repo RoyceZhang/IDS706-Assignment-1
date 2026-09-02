@@ -6,7 +6,9 @@ def test_welcome_message():
 
 
 def test_welcome_message_strips_spaces():
-    assert welcome_message("  Royce  ") == "Royce, welcome to the Data Engineering course."
+    assert (
+        welcome_message("  Royce  ") == "Royce, welcome to the Data Engineering course."
+    )
 
 
 def test_empty_name():
